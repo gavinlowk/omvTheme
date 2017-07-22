@@ -1,5 +1,9 @@
 # omv-theme
+<<<<<<< HEAD
 
+=======
+omv-theme
+>>>>>>> origin/master
 Mit diesem Tool können sie einfach zwischen den GUI-Theme Switchen
 
 Zum instrallieren:
