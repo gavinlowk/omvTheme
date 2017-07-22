@@ -9,6 +9,9 @@ Zum Deinstallieren:
 rm -r omv-theme                                                                               
 rm -r /usr/bin/omv-theme
 
+Zum Starten:                                                                            
+omv-theme                                     
+
 Ich möchte mich für die mithilfe auch Bedanken bei @The Master & @DeepB für [CSS] Black OMV GUI v5, 
 https://forum.openmediavault.org/index.php/Thread/18641-CSS-Black-OMV-GUI-v5/                                          
 
@@ -22,6 +25,9 @@ git clone https://github.com/Wolf2000Pi/omv-theme.git && cd omv-theme && chmod +
 To uninstall:       
 rm -r omv-theme                                                                               
 rm -r /usr/bin/omv-theme
+
+To Start:                                       
+omv-theme
 
 I would also like to thank for the help with @The Master & @DeepB for [CSS] Black OMV GUI v5,
 https://forum.openmediavault.org/index.php/Thread/18641-CSS-Black-OMV-GUI-v5/                                         
