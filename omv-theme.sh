@@ -108,7 +108,7 @@ exec omv-theme
 
 do_update_omv_theme() {
   rm -r /root/omv-theme/ &&
-  git clone git clone https://github.com/Wolf2000Pi/omv-theme.git &&
+  git clone https://github.com/Wolf2000Pi/omv-theme.git &&
   cd /root/omv-theme &&
   chmod +x omv-theme.sh &&
   cd /usr/bin/ &&
