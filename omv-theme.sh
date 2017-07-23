@@ -1,6 +1,6 @@
 #!/bin/sh
-# omv-theme https://github.com/Wolf2000Pi/wolf2000-tools
-# Version 1.0
+# omv-theme https://github.com/Wolf2000Pi
+# Version 1.0.2
 # by Wolf2000
 
 INTERACTIVE=True
@@ -31,6 +31,8 @@ Für Schäden übernehme ich Keine Haftung!
 @Wolf2000.\
 Ich möchte mich für die mithilfe auch Bedanken bei 
 @DeepB für [CSS] Black OMV GUI v5, @The Master
+V1.0.2
+
 " 20 70 1
 }
 
