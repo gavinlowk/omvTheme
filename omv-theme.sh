@@ -113,7 +113,7 @@ do_update_omv-theme() {
   chmod +x omv-theme.sh &&
   cd /usr/bin/ &&
   rm -r omv-theme &&
-  cp /root/omv-theme/omv-theme.sh /usr/binomv-theme &&
+  cp /root/omv-theme/omv-theme.sh /usr/bin/omv-theme &&
   cd &&
   exec omv-theme
 }
