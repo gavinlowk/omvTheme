@@ -106,6 +106,19 @@ cp /root/omv-theme/theme-custom.css /var/www/openmediavault/css/
 exec omv-theme
 }
 
+do_update_omv-theme() {
+  rm -r /root/omv-theme/ &&
+  git clone git clone https://github.com/Wolf2000Pi/omv-theme.git &&
+  cd /root/omv-theme &&
+  chmod +x omv-theme.sh &&
+  cd /usr/bin/ &&
+  rm -r omv-theme &&
+  cp /root/omv-theme/omv-theme.sh /usr/binomv-theme &&
+  cd &&
+  exec omv-theme
+}
+
+
 #
 # Interactive use loop
 #
@@ -116,6 +129,7 @@ while true; do
     "2 Triton" "" \
     "3 Black" "" \
 	"4 About" ""\
+	"5 Update" ""\
     3>&1 1>&2 2>&3)
   RET=$?
   if [ $RET -eq 1 ]; then
@@ -126,6 +140,7 @@ while true; do
       2\ *) do_omv_triton ;;
       3\ *) do_omv_black ;;
 	  4\ *) do_about ;;
+	  5\ *) do_update_omv-theme ;;
       *) whiptail --msgbox "Programmer error: unrecognized option" 20 40 1 ;;
     esac || whiptail --msgbox "There was an error running option $FUN" 20 40 1
   else
