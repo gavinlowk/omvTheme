@@ -88,12 +88,14 @@ do_finish() {
 
 do_omv_triton() {
 echo 'OMV_WEBUI_THEME=triton' >> /etc/default/openmediavault
+cp /root/omv-theme/theme-custom.css /var/www/openmediavault/css/
 rm -r /var/www/openmediavault/css/theme-custom.css
 exec omv-theme
 }
 
 do_omv_gray() {
 echo 'OMV_WEBUI_THEME=gray' >> /etc/default/openmediavault
+cp /root/omv-theme/theme-custom.css /var/www/openmediavault/css/
 rm -r /var/www/openmediavault/css/theme-custom.css
 exec omv-theme
 }
