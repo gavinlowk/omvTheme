@@ -106,7 +106,7 @@ cp /root/omv-theme/theme-custom.css /var/www/openmediavault/css/
 exec omv-theme
 }
 
-do_update_omv-theme() {
+do_update_omv_theme() {
   rm -r /root/omv-theme/ &&
   git clone git clone https://github.com/Wolf2000Pi/omv-theme.git &&
   cd /root/omv-theme &&
@@ -140,7 +140,7 @@ while true; do
       2\ *) do_omv_triton ;;
       3\ *) do_omv_black ;;
 	  4\ *) do_about ;;
-	  5\ *) do_update_omv-theme ;;
+	  5\ *) do_update_omv_theme ;;
       *) whiptail --msgbox "Programmer error: unrecognized option" 20 40 1 ;;
     esac || whiptail --msgbox "There was an error running option $FUN" 20 40 1
   else
