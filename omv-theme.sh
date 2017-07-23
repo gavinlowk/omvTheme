@@ -89,19 +89,19 @@ do_finish() {
 do_omv_triton() {
 echo 'OMV_WEBUI_THEME=triton' >> /etc/default/openmediavault
 rm -r /var/www/openmediavault/css/theme-custom.css
-exec ./omv-theme.sh
+exec omv-theme
 }
 
 do_omv_gray() {
 echo 'OMV_WEBUI_THEME=gray' >> /etc/default/openmediavault
 rm -r /var/www/openmediavault/css/theme-custom.css
-exec ./omv-theme.sh
+exec omv-theme
 }
 
 do_omv_black() {
 echo 'OMV_WEBUI_THEME=triton' >> /etc/default/openmediavault
 cp /root/omv-theme/theme-custom.css /var/www/openmediavault/css/
-exec ./omv-theme.sh
+exec omv-theme
 }
 
 #
